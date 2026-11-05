@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="dark light">
+<title>Adextry · Advertise on real screens in Nigeria</title>
+
+<meta name="description" content="Book digital billboards and screens across Nigeria. Choose your screens, pay in naira, and get proof-of-play for every airing. Screen owners earn from every campaign.">
+<meta name="theme-color" content="#2563EB">
+<link rel="icon" href="static/images/logo/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="static/images/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="static/images/logo/favicon-192.png">
+<link rel="apple-touch-icon" href="static/images/logo/apple-touch-icon.png">
+<meta property="og:site_name" content="Adextry">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adextry: advertise on real screens, without the salesperson">
+<meta property="og:description" content="Book digital billboards across Nigeria. Proof-of-play for every airing.">
+<meta property="og:image" content="://static/images/logo/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/adextry/base.css">
+
+<!--<script src="https://unpkg.com/htmx.org@1.9.10"></script>-->
+
+
+<link rel="stylesheet" href="static/css/adextry/home.css">
+<link rel="stylesheet" href="static/css/adextry/marketing.css">
+
+<link rel="stylesheet" href="static/css/adextry/theme-light.css">
+</head>
+<body>
+
+
+<nav id="nav">
+  <div class="wrap nav-row">
+    <a href="./" class="logo">
+      <img
+        src="static/images/logo/logo-dark.png"
+        alt="Adextry"
+        class="logo-mark-img logo-t-dark"
+      >
+<img
+        src="static/images/logo/logo-light.png"
+        alt="" aria-hidden="true"
+        class="logo-mark-img logo-t-light"
+      >
+      <span class="logo-word">Adextry</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="how-it-works/"
+          class="">How it works</a>
+          <a href="player/" class="">Android player</a>
+      <a href="integrations/"
+      class="">Integrations</a>
+      <a href="about/"
+          class="">About</a>
+      <a href="contact/"
+          class="">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="contact/" class="btn btn-primary">Get started</a>
+    </div>
+
+    <!-- Mobile-only hamburger, hidden on desktop via CSS -->
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile slide-down menu, hidden on desktop via CSS -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="how-it-works/"
+     class="">How it works</a>
+  <a href="player/"
+    class="">Android player</a>
+  <a href="integrations/"
+    class="">Integrations</a>
+  <a href="about/"
+     class="">About</a>
+  <a href="contact/"
+     class="">Contact</a>
+  <div class="mobile-actions">
+    <a href="contact/" class="btn btn-primary">Get started</a>
+  </div>
+</div>
+
+
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-inner">
+      <span class="eyebrow">The marketplace for digital screen advertising</span>
+      <h1>Advertise on real screens, without the salesperson.</h1>
+      <p>Adextry connects advertisers with digital billboards and screens. Choose your screens, set your slots and schedule, and submit your campaign. Once it's approved, it joins the screen's rotation, with proof-of-play for every airing.</p>
+      <div class="hero-ctas">
+        <a href="contact/" class="btn btn-primary">Get started</a>
+        <a href="how-it-works/" class="see-how">See how it works →</a>
+      </div>
+    </div>
+
+    <div class="device-stage perspective-2000">
+      <div class="device-mesh" id="deviceMesh">
+        <div class="device-glow"></div>
+        <div class="device-frame">
+          <div class="device-screen">
+            <div class="device-led-grid"></div>
+            <div class="device-shimmer" id="deviceShimmer"></div>
+            <div class="device-slides" id="deviceSlides">
+              <div class="device-slide active" data-slide="0">
+                <img src="static/images/logo/logo-dark.png" alt="Adextry" class="mini-logo-mark">
+              </div>
+
+              <!-- MEDIA SLOT 1 — replace static/media/ad-1.jpg with your file (image or video) -->
+              <!-- MEDIA SLOT 1 — video file -->
+              <div class="device-slide" data-slide="1">
+                <video class="slide-media" autoplay muted loop playsinline>
+                  <source src="static/media/mixkit-center-of-the-street-in-times-square-4443-hd-ready.mp4" type="video/mp4">
+                </video>
+              </div>
+       
+            <div class="device-slide" data-slide="2">
+              <img src="static/images/ads/ad-1.jpg" alt="Sample campaign 1" class="slide-media" width="1600" height="900">
+            </div>
+ 
+          <!-- MEDIA SLOT 2 — replace static/media/ad-2.jpg with your file (image or video) 
+            <div class="device-slide" data-slide="2">
+              <video class="slide-media" autoplay muted loop playsinline>
+                <source src="static/media/bill.mp4" type="video/mp4">
+              </video>
+            </div>
+          -->
+
+          <div class="device-slide" data-slide="3">
+            <img src="static/images/ads/ad-2.jpg" alt="Sample campaign 2" class="slide-media" width="1600" height="900">
+          </div>
+
+            <!-- MEDIA SLOT 3 — replace static/media/ad-3.jpg with your file (image or video) 
+            <div class="device-slide" data-slide="3">
+              <img src="static/media/1600417801132398.jpg" alt="Campaign creative 3" class="slide-media">
+            </div>
+            -->
+
+            <div class="device-slide" data-slide="4">
+            <img src="static/images/ads/ad-3.jpg" alt="Sample campaign 3" class="slide-media" width="1600" height="900">
+            </div>
+            
+               <div class="device-slide" data-slide="5">
+                <div class="sample-proof">
+                  <span class="material-check">✓</span>
+                  <div class="sample-proof-text">
+                    <div class="sample-proof-title">Proof-of-play recorded</div>
+                    <div class="sample-proof-time" id="proofTime">--:--:--</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="device-overlay">
+              <div>
+                <div class="device-tag">Live campaign</div>
+                <div class="device-loc">Lagos Metropolis · Player #072</div>
+              </div>
+              <div class="device-rec"><span></span></div>
+            </div>
+          </div>
+          <div class="device-bezel"></div>
+        </div>
+        <div class="device-stand"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>PLAYER #072 · LAGOS · LIVE</span>
+    <span>CAMPAIGN DEPLOYED · DOWNTOWN NETWORK</span>
+    <span>PLAYER ONLINE · SYNC OK</span>
+    <span>NEXT SLOT · 00:42</span>
+    <span>PROOF-OF-PLAY RECORDED</span>
+    <span>PLAYER #072 · LAGOS · LIVE</span>
+    <span>CAMPAIGN DEPLOYED · DOWNTOWN NETWORK</span>
+    <span>PLAYER ONLINE · SYNC OK</span>
+    <span>NEXT SLOT · 00:42</span>
+    <span>PROOF-OF-PLAY RECORDED</span>
+  </div>
+</div>
+
+<section class="split reveal">
+  <div class="wrap">
+    <div class="split-head">
+      <span class="eyebrow">Two sides, one marketplace</span>
+      <h2>Built for advertisers and screen owners alike.</h2>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#9DA0A6" stroke-width="1.6"><path d="M3 11l18-7-7 18-3-8-8-3z"/></svg>
+        </div>
+
+        <h3>For advertisers</h3>
+         <p>Choose screens by location and price, set your slots per day and campaign length, and submit your creative. Once it's reviewed and approved, your ad joins the rotation and every play is logged as proof-of-play.</p>
+        <a href="contact/" class="card-link">Start a campaign <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="card reveal" style="transition-delay:120ms">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#9DA0A6" stroke-width="1.6"><rect x="4" y="3" width="16" height="13" rx="1.5"/><path d="M9 20h6M12 16v4"/></svg>
+        </div>
+        
+        <h3>For screen owners</h3>
+        <p>List your screen with its location, price per slot and operating hours, and pair the Adextry Android player. You approve the campaigns that air on your screen, and payments are split automatically.</p>
+        <a href="contact/" class="card-link">Register your screens <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ruled reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why Adextry</span>
+      <h2>Everything an out-of-home campaign needs, in one place.</h2>
+      <p>No phone calls, no spreadsheets, no guessing whether your ad ran.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg></div>
+        <h3>Proof-of-play for every airing</h3>
+        <p>Every time your ad plays, it is logged with the time. You see exactly what ran and when.</p>
+      </div>
+      <div class="feature reveal" style="transition-delay:70ms">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10h18M7 15h4"/></svg></div>
+        <h3>Pay in naira, securely</h3>
+        <p>You see the full price before you pay. Payments go through Paystack, and we never see your card.</p>
+      </div>
+      <div class="feature reveal" style="transition-delay:140ms">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M8 3v4M16 3v4M4 10h16M12 13v5M9.5 15.5h5"/></svg></div>
+        <h3>Missed a day? We make it up</h3>
+        <p>On screens that run the Adextry player, a day your ad did not play gets a free replacement day.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2.2 2.2L15 10.5"/></svg></div>
+        <h3>Screen owners stay in control</h3>
+        <p>Every campaign is checked by Adextry, then approved by the screen owner before it goes on their screen.</p>
+      </div>
+      <div class="feature reveal" style="transition-delay:70ms">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 4v10M8 10.5l4 4 4-4"/><path d="M5 19h14"/></svg></div>
+        <h3>Keeps playing when the internet drops</h3>
+        <p>The player saves your ads on the device, so a short outage never turns a screen black.</p>
+      </div>
+      <div class="feature reveal" style="transition-delay:140ms">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+        <h3>Right time on every screen</h3>
+        <p>Each screen runs on its own local time, so your daily hours are correct wherever the box is set.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ruled">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">From idea to live</span>
+      <h2>Launch a campaign in three steps.</h2>
+      <p>Pick your screens, get approved, and watch it go live. <a href="how-it-works/" style="color:var(--accent)">See the full process</a>.</p>
+    </div>
+
+    <div class="showcase reveal">
+      <div class="showcase-text">
+        <span class="eyebrow">Step 1</span>
+        <h3>Choose your screens and dates</h3>
+        <p>Browse screens by location and price. Pick how many slots a day and for how long. The full price is shown before you pay anything.</p>
+        <ul class="checklist"><li>Compare screens side by side</li><li>Set slots per day and campaign length</li><li>No account manager needed</li></ul>
+      </div>
+      <div class="showcase-media media-frame"><picture><source media="(max-width: 760px)" srcset="static/images/illustrations/how-adv-1-choose-single.webp" width="505" height="905"><img src="static/images/illustrations/how-adv-1-choose.webp" alt="Choosing screens on a map with prices" width="1030" height="905" loading="lazy"></picture></div>
+    </div>
+
+    <div class="showcase showcase--reverse reveal">
+      <div class="showcase-text">
+        <span class="eyebrow">Step 2</span>
+        <h3>Get approved, then pay</h3>
+        <p>Adextry checks your content and the screen owner approves it. Both checks happen before you pay, and you pay in naira with Paystack.</p>
+        <ul class="checklist"><li>Two checks keep every screen safe</li><li>Images and videos accepted</li><li>Payments are final, so check your dates first</li></ul>
+      </div>
+      <div class="showcase-media media-frame"><picture><source media="(max-width: 760px)" srcset="static/images/illustrations/how-adv-3-review-single.webp" width="505" height="905"><img src="static/images/illustrations/how-adv-3-review.webp" alt="Adextry review followed by screen owner approval" width="1030" height="905" loading="lazy"></picture></div>
+    </div>
+
+    <div class="showcase reveal">
+      <div class="showcase-text">
+        <span class="eyebrow">Step 3</span>
+        <h3>Go live and track every play</h3>
+        <p>Your ad joins the screen's rotation. Each airing is recorded as proof-of-play, and if a booked day is missed on an Adextry player screen, we add a day to make up for it.</p>
+        <ul class="checklist"><li>Proof-of-play in your dashboard</li><li>Free make-up day for a missed day</li></ul>
+      </div>
+      <div class="showcase-media media-frame"><picture><source media="(max-width: 760px)" srcset="static/images/illustrations/how-adv-5-live-single.webp" width="505" height="905"><img src="static/images/illustrations/how-adv-5-live.webp" alt="An ad playing on a billboard with proof-of-play and a make-up day" width="1030" height="905" loading="lazy"></picture></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ruled reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">For screen owners</span>
+      <h2>Two ways to put your screen on Adextry.</h2>
+      <p>Use our Android player, or connect the CMS you already run.</p>
+    </div>
+    <div class="duo">
+      <div class="duo-card">
+        <div class="media-frame"><picture><source media="(max-width: 760px)" srcset="static/images/illustrations/player-5-pair-single.webp" width="505" height="905"><img src="static/images/illustrations/player-5-pair.webp" alt="Pairing an Android box with the code shown on the screen" width="1030" height="905" loading="lazy"></picture></div>
+        <div class="body">
+          <h3>Adextry Android player</h3>
+          <p>Plug a small Android box or stick into any screen. Install the app, enter the pairing code shown on the screen, and you are online in minutes.</p>
+          <a href="player/" class="card-link">Set up the player <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="duo-card">
+        <div class="media-frame"><picture><source media="(max-width: 760px)" srcset="static/images/illustrations/int-1-hero-single.webp" width="505" height="905"><img src="static/images/illustrations/int-1-hero.webp" alt="Adextry connected to a screen CMS" width="1030" height="905" loading="lazy"></picture></div>
+        <div class="body">
+          <h3>Your own CMS <span class="badge badge--soon">In preview</span></h3>
+          <p>Already run a screen network? Adextry delivers approved ads into your CMS and reads back what played. Available to a few screen owners first.</p>
+          <a href="integrations/" class="card-link">See integrations <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ruled reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>Good to know before you start.</h2>
+    </div>
+    <div class="faq">
+      <details><summary>How much does it cost?</summary><div class="answer">Each screen owner sets a price per slot. You see the full price for your screens, slots and dates before you pay, and you pay in naira.</div></details>
+      <details><summary>Who approves my ad?</summary><div class="answer">Two checks: Adextry reviews the content first, then the screen owner approves it for their screen. You only pay after both are done.</div></details>
+      <details><summary>Can I cancel or get a refund?</summary><div class="answer">You can cancel for free until your campaign is approved. After you pay, bookings are final and not refundable. If your ad does not play on a booked day because of a problem on our side or the screen's, we add a make-up day at no cost. See the <a href="terms/">terms</a> for details.</div></details>
+      <details><summary>How do I know my ad played?</summary><div class="answer">Every airing is logged as proof-of-play, with the time, and you can see the log in your dashboard.</div></details>
+      <details><summary>What files can I upload?</summary><div class="answer">Images (JPG, PNG, WebP) up to 10 MB and videos (MP4, MOV, WebM) up to 500 MB. We check the format and size for you.</div></details>
+      <details><summary>What do I need to host a screen?</summary><div class="answer">A screen, an Android TV box or stick (Android 8.0 or newer), and an internet connection. Install the free Adextry Player and pair it with the code on the screen. <a href="player/">Read the setup guide</a>.</div></details>
+      <details><summary>How do screen owners get paid?</summary><div class="answer">When an advertiser pays, your share is sent straight to your bank account through Paystack. There is nothing to withdraw.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ruled">
+  <div class="wrap">
+    <div class="band reveal">
+      <h2>Ready to put your ad on a real screen?</h2>
+      <p>Create a free account in a minute, whether you want to advertise or list a screen.</p>
+      <div class="band-actions">
+        <a href="contact/" class="btn btn-primary">Get started</a>
+        <a href="contact/" class="btn btn-ghost">Talk to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+
+    <div class="footer-brand">
+      <div class="logo">
+        <img
+          src="static/images/logo/logo-dark.png"
+          alt="Adextry"
+          class="logo-mark-img logo-t-dark"
+        >
+<img
+          src="static/images/logo/logo-light.png"
+          alt="" aria-hidden="true"
+          class="logo-mark-img logo-t-light"
+        >
+        <span class="logo-word">Adextry</span>
+      </div>
+      <p>The operating layer for physical out-of-home screens from campaign submission to live delivery, in real time.</p>
+      <!--
+        <div class="social-row">
+          <a href="#" aria-label="X / Twitter">X</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">IG</a>
+        </div>
+      -->
+    </div>
+
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="how-it-works/">How it works</a></li>
+        <li><a href="how-it-works/#advertisers">For advertisers</a></li>
+        <li><a href="how-it-works/#screen-owners">For screen owners</a></li>
+        <li><a href="player/">Android player</a></li>
+        <li><a href="integrations/">CMS integrations</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about/">About</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <ul>
+        <li><a href="privacy/">Privacy policy</a></li>
+        <li><a href="terms/">Terms of service</a></li>
+       </ul>
+     </div>
+
+  </div>
+
+  <div class="wrap footer-bottom">
+    <div class="footer-meta">
+      <a href="mailto:hello@adextry.io">hello@adextry.io</a>
+      <span class="dot">&middot;</span>
+      <span>&copy; 2026 Adextry</span>
+    </div>
+    <div class="footer-meta">
+      <span>Built for Nigeria's outdoor advertising market</span>
+    </div>
+  </div>
+</footer>
+
+<script src="static/js/adextry/base.js"></script>
+
+<script src="static/js/adextry/home.js"></script>
+
+</body>
+</html>

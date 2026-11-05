@@ -1,0 +1,158 @@
+/* Shared building blocks for the public marketing pages (home, how it works, player, integrations).
+   Uses the same tokens as base.css, so it follows the light/dark theme automatically. */
+
+.section{ padding: 100px 0; }
+.section--tight{ padding: 64px 0; }
+.section--ruled{ border-top: 1px solid var(--panel-border); }
+.section-head{ max-width: 720px; margin: 0 auto 52px; text-align: center; }
+.section-head h2{
+  font-family:'Space Grotesk', sans-serif; font-weight:700; font-size: clamp(28px, 3.6vw, 40px);
+  line-height: 1.1; margin: 14px 0 14px;
+}
+.section-head p{ color: var(--text-mid); font-size: 17px; line-height: 1.65; }
+
+/* image frames: the illustrations are dark panels, so they sit well on both themes */
+.media-frame{
+  border-radius: 20px; overflow: hidden; background: #090C13;
+  border: 1px solid var(--panel-border); box-shadow: 0 30px 70px -34px rgba(0,0,0,0.55);
+}
+.media-frame img{ display:block; width:100%; height:auto; }
+
+/* feature grid */
+.feature-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.feature{
+  background: var(--panel); border: 1px solid var(--panel-border);
+  border-radius: 18px; padding: 26px;
+}
+.feature .ico{
+  width: 44px; height: 44px; border-radius: 12px; display:grid; place-items:center;
+  background: var(--accent-dim); color: var(--accent); margin-bottom: 18px;
+}
+.feature .ico svg{ width: 22px; height: 22px; fill:none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.feature h3{ font-family:'Space Grotesk', sans-serif; font-size: 18px; font-weight:600; margin-bottom: 8px; }
+.feature p{ font-size: 14.5px; line-height: 1.65; color: var(--text-mid); }
+
+/* alternating text + image */
+.showcase{ display:grid; grid-template-columns: 0.8fr 1.4fr; gap: 56px; align-items:center; }
+.showcase + .showcase{ margin-top: 96px; }
+.showcase > *, .duo > *, .feature-grid > *, .need-grid > *{ min-width: 0; }   /* lets long code lines scroll inside their box instead of widening the page */
+.showcase--reverse .showcase-media{ order: 2; }
+.showcase-text h3{ font-family:'Space Grotesk', sans-serif; font-size: clamp(24px, 2.6vw, 30px); font-weight:700; line-height:1.15; margin: 12px 0 14px; }
+.showcase-text p{ color: var(--text-mid); font-size: 16px; line-height: 1.7; margin-bottom: 14px; max-width: 480px; }
+.showcase-text .card-link{ margin-top: 10px; }
+
+.checklist{ list-style:none; padding:0; margin: 18px 0 0; display:grid; gap: 12px; }
+.checklist li{ display:flex; gap: 12px; align-items:flex-start; color: var(--text-mid); font-size: 15px; line-height: 1.55; }
+.checklist li::before{
+  content:""; flex: 0 0 20px; height: 20px; margin-top: 2px; border-radius: 50%;
+  background: var(--accent-dim) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-6.5' fill='none' stroke='%233E8CFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat;
+}
+
+/* how-it-works steps with a picture */
+.steps--visual{ max-width: 1116px; }
+.steps--visual .step{ grid-template-columns: 56px minmax(0,260px) minmax(0,1fr); gap: 32px; align-items:center; padding: 44px 0; }
+.steps--visual .step p{ max-width: 260px; }
+.steps--visual .step .media-frame{ border-radius: 16px; }
+
+/* status pills */
+.badge{
+  display:inline-flex; align-items:center; gap:6px; padding: 5px 12px; border-radius: 999px;
+  font-family:'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  background: var(--accent-dim); color: var(--accent); border: 1px solid rgba(62,140,255,0.3);
+}
+.badge--soon{ background: rgba(251,191,36,0.12); color: #B7791F; border-color: rgba(251,191,36,0.4); }
+@media (prefers-color-scheme: dark){ .badge--soon{ color:#FBBF24; } }
+:root[data-theme="dark"] .badge--soon{ color:#FBBF24; }
+
+/* "what you need" cards */
+.need-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.need{ background: var(--panel); border: 1px solid var(--panel-border); border-radius: 16px; padding: 22px; }
+.need .num{ font-family:'JetBrains Mono', monospace; font-size: 12px; color: var(--text-low); letter-spacing: 0.1em; }
+.need h4{ font-family:'Space Grotesk', sans-serif; font-size: 17px; font-weight:600; margin: 10px 0 6px; }
+.need p{ font-size: 14px; line-height: 1.6; color: var(--text-mid); }
+
+/* two cards: player vs CMS */
+.duo{ display:grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.duo-card{
+  background: var(--panel); border: 1px solid var(--panel-border); border-radius: 22px; padding: 18px 18px 30px;
+  display:flex; flex-direction:column;
+}
+.duo-card .media-frame{ margin-bottom: 24px; }
+.duo-card .body{ padding: 0 10px; }
+.duo-card h3{ font-family:'Space Grotesk', sans-serif; font-size: 24px; font-weight:700; margin: 10px 0 10px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+.duo-card p{ color: var(--text-mid); font-size: 15.5px; line-height: 1.65; margin-bottom: 8px; }
+
+/* images inside the existing home cards */
+.card .card-media{ margin: -8px -8px 22px; }
+
+/* code block */
+.code-block{
+  background: #090C13; color: #9CC3FF; border: 1px solid var(--panel-border); border-radius: 14px;
+  padding: 18px 20px; font-family:'JetBrains Mono', monospace; font-size: 13.5px; line-height: 1.7;
+  overflow-x: auto; white-space: pre; margin: 18px 0 0; max-width: 100%;
+}
+
+/* FAQ (native <details>, no script needed) */
+.faq{ max-width: 780px; margin: 0 auto; }
+.faq details{ border-top: 1px solid var(--panel-border); padding: 4px 0; }
+.faq details:last-child{ border-bottom: 1px solid var(--panel-border); }
+.faq summary{
+  cursor:pointer; list-style:none; padding: 20px 40px 20px 0; position:relative;
+  font-family:'Space Grotesk', sans-serif; font-size: 18px; font-weight:600;
+}
+.faq summary::-webkit-details-marker{ display:none; }
+.faq summary::after{
+  content:"+"; position:absolute; right: 4px; top: 50%; transform: translateY(-50%);
+  font-size: 26px; font-weight: 400; color: var(--text-low); transition: transform .2s ease;
+}
+.faq details[open] summary::after{ content:"–"; }
+.faq .answer{ padding: 0 0 22px; color: var(--text-mid); font-size: 15.5px; line-height: 1.7; max-width: 680px; }
+.faq .answer a{ color: var(--accent); }
+
+/* closing call-to-action band */
+.band{
+  text-align:center; padding: 72px 24px; border-radius: 28px; max-width: 980px; margin: 0 auto;
+
+ 
+}
+.band h2{ font-family:'Space Grotesk', sans-serif; font-weight:700; font-size: clamp(28px, 3.6vw, 40px); line-height:1.1; margin-bottom: 14px; }
+.band p{ color: var(--text-mid); font-size: 17px; line-height:1.6; max-width: 520px; margin: 0 auto 28px; }
+.band-actions{ display:flex; gap: 12px; justify-content:center; flex-wrap:wrap; }
+
+/* page hero for the player / integrations pages */
+.page-hero-media{ max-width: 980px; margin: 8px auto 0; }
+.page-head .hero-ctas{ display:flex; flex-wrap:wrap; gap: 14px; justify-content:center; margin-top: 28px; }
+.page-head .badge{ margin-bottom: 18px; }
+
+@media (max-width: 960px){
+  .feature-grid{ grid-template-columns: repeat(2, 1fr); }
+  .need-grid{ grid-template-columns: repeat(2, 1fr); }
+  .showcase{ grid-template-columns: 1fr; gap: 28px; }
+  .showcase--reverse .showcase-media{ order: 0; }
+  .showcase + .showcase{ margin-top: 64px; }
+  .duo{ grid-template-columns: 1fr; }
+  .steps--visual .step{ grid-template-columns: 56px 1fr; }
+  .steps--visual .step .media-frame{ grid-column: 1 / -1; }
+}
+@media (max-width: 600px){
+  .section{ padding: 72px 0; }
+  .feature-grid, .need-grid{ grid-template-columns: 1fr; }
+  .band{ padding: 52px 20px; border-radius: 22px; }
+  .faq summary{ font-size: 16.5px; }
+}
+
+/* Readable app screenshots: two phones side by side on wide screens, one big phone on small ones.
+   The phones fade into the panel at the bottom, so the picture can stay large without a hard cut. */
+.media-frame picture{ display:block; }
+.media-frame img{ background:#111; }
+@media (max-width: 960px){
+  .steps--visual .step p{ max-width: 520px; }
+}
+@media (max-width: 760px){
+  /* single phone, centred, never wider than the phone is tall enough to read */
+  .steps--visual .step .media-frame img,
+  .showcase-media.media-frame img{ max-width: 420px; margin: 0 auto; }
+}
+
+/* link arrows stay small even on pages that don't load home.css */
+.card-link svg{ width:14px; height:14px; flex:none; }
